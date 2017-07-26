@@ -1,0 +1,36 @@
+doctype
+html
+    head
+        link(rel='stylesheet', href='/libs/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/libs/bootstrap/css/bootstrap-theme.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet" href="/libs/bootstrap/js/jquery-ui/jquery-ui.css")
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    body
+        .navbar.navbar-default.navbar-fixed-top
+            .container-fluid
+                .nav-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') OMFD Elastic
+                #navbar-main.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href='/create/') Create
+                    ul.nav.pull-right
+                        li.divider-vertical
+                        form(method="get", class="navbar-form navbar-left", action="/search")
+                            input(type="text", id="main-search", name="q", placeholder="search", class="search-query form-control" autocomplete="off")
+        .container-fluid
+            block content
+    footer
+        .row
+            .col-xs-12
+                hr
+                small &copy; Tarun 2016
+        script(src="/libs/bootstrap/js/jquery-3.2.1.min.js")
+        script(src="/libs/bootstrap/js/bootstrap.min.js")
+        script(src="/libs/bootstrap/js/jquery-ui/jquery-ui.js")
+        script(src="/js/autocomplete.js")

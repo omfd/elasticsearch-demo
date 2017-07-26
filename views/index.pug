@@ -1,0 +1,66 @@
+extends layout
+include includes/mixin
+
+block content
+    .row
+        .col-md-6.col-sm-12
+            title "OMFD"
+            h1 ElasticSearch Node.js Application.
+    .row
+        .col-md-6.col-sm-12
+            .input-group
+                input#auto-1.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="Match Best Fields(Max of): First / Last Name" aria-describedby="basic-addon2")
+                span.input-group-btn#basic-addon2
+                    button.btn.btn-default(type="button") Go!
+            br
+            .input-group
+                input#auto-2.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="Match Most Fields(Sum of): First / Last Name" aria-describedby="basic-addon")
+                span.input-group-btn#basic-addon
+                    button.btn.btn-default(type="button") Go!
+            br
+            .input-group
+                input#auto-3.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="Edge NGrams - First / Last Name" aria-describedby="basic-addon1")
+                span.input-group-btn#basic-addon1
+                    button.btn.btn-default(type="button") Go!
+            br
+            .input-group
+                input#auto-4.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="NGrams - First / Last Name - Partial Matches Example" aria-describedby="basic-addon3")
+                span.input-group-btn#basic-addon3
+                    button.btn.btn-default(type="button") Go!
+            br
+            .input-group
+                input#auto-5.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="Shingle - First / Last Name - Partial Matches Example" aria-describedby="basic-addon4")
+                span.input-group-btn#basic-addon4
+                    button.btn.btn-default(type="button") Go!
+            br
+        .col-md-6.col-sm-12
+            .input-group
+                input#auto-7.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="Match Country with Fuziness" aria-describedby="basic-addon6")
+                span.input-group-btn#basic-addon6
+                    button.btn.btn-default(type="button") Go!
+    .row
+        .col-md-6.col-sm-12
+            h2="Example of multimatch across multiple fields"
+            .input-group
+                input#auto-6.search-query.form-control.ui-autocomplete-loading(method="get", placeholder="Show the document as a whole with matches" aria-describedby="basic-addon5")
+                span.input-group-btn#basic-addon5
+                    button.btn.btn-default(type="button") Go!
+            br
+    //.row
+    //    .col-md-6.col-sm-12
+    //        - var result = 1
+    //        if result
+    //            +resultFn(result)
+    //        p This example illustrates basic search features of Searchly.
+    //
+    //        p Sample application is using
+    //            a(href='https://github.com/elasticsearch/elasticsearch-js')= ' Elasticsearch Node.js client '
+    //
+    //        p To create initial index and sample data click
+    //            a(href='/index')= ' Create Sample Index & Data! '
+    //
+    //        p Type "Jack" or "John" to search box and hit enter for sample search results.
+    //
+    //        #show=result
+    //        if result
+    //            p= result

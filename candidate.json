@@ -1,0 +1,64 @@
+{
+  "data": {
+    "user_profile": {
+      "_id": "594b7f6ce9ad564d8195f231",
+      "mobile_no": "6575786587",
+      "name": "Narendra Modi",
+      "last_seen": "2017-06-22T08:45:48.949Z",
+      "updated_at": "2017-06-22T08:33:55.368Z",
+      "created_at": "2017-06-22T08:27:24.251Z",
+      "roles": [
+        "employee"
+      ],
+      "is_email_verified": false,
+      "is_mobile_verified": true,
+      "email": "kaka@gmail.com",
+      "gender": "M",
+      "dob": "1999-01-01T00:00:00.000Z",
+      "aadhar_no": "1111-1111-1111",
+      "user_id": "594b7f4de9ad564d8195f230",
+      "on_boarding_er": {
+        "last_level": -1,
+        "is_completed": false
+      },
+      "on_boarding_ee": {
+        "last_level": 2,
+        "is_completed": false
+      },
+      "part_time_preferences": [
+        "Waiter",
+        "Cook",
+        "Chef",
+        "Valet"
+      ],
+      "full_time_preferences": [
+        "Driver",
+        "Operations Manager"
+      ],
+      "total_experience_unit": "2 years",
+      "languages": [
+        "Hindi",
+        "English",
+        "Kannada"
+      ],
+      "__v": 1,
+      "education": "Graduation and above",
+      "total_experience": "0"
+    },
+    "user_experience": [
+      {
+        "_id": "594b83bc63365249739f58bc",
+        "created_by": "594b7f4de9ad564d8195f230",
+        "designation": "Waiter",
+        "company": "Godawari Power Plant",
+        "duration": "2 years",
+        "name": "Narendra Modi",
+        "user_id": "594b7f4de9ad564d8195f230",
+        "updated_at": "2017-06-22T08:45:48.951Z",
+        "created_at": "2017-06-22T08:45:48.960Z",
+        "duration_unit": "2 years",
+        "__v": 0
+      }
+    ]
+  }
+}
